@@ -1,0 +1,208 @@
+.home-BG {
+  width: 1154px;
+  height: auto;
+  justify-self: center;
+}
+.header {
+  display: flex;
+  padding-top: 150px;
+}
+.gradient {
+  margin-top: 20px;
+  display: flex;
+  width: 385px;
+  height: 430px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(118, 60, 172, 1) 0%,
+    rgba(50, 15, 133, 1) 57%,
+    rgba(50, 15, 133, 0) 100%
+  );
+  box-shadow: 0 0 85px 20px rgba(50, 15, 133, 1);
+}
+.me {
+  width: 258px;
+  height: 259px;
+}
+.header-text {
+  color: white;
+  font-family: "Preahvihear";
+}
+.header-text h1 {
+  font-size: 19px;
+}
+.header-text h2 {
+  font-size: 17px;
+  margin-top: 100px;
+}
+.header-text img {
+  width: 164px;
+  height: 48px;
+  position: absolute;
+  margin-top: 150px;
+}
+.header-text h3 {
+  font-size: 36px;
+  width: 300px;
+  line-height: 50px;
+}
+.header-text h4 {
+  font-size: 11px;
+}
+.about-me {
+  font-family: "Preahvihear";
+  color: white;
+  margin-top: 132px;
+}
+.about-me h2 {
+  font-size: 50px;
+  display: inline-block;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(24), cursor 0.4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65.5%;
+  }
+}
+.about-me p {
+  width: 892px;
+  margin-top: 52px;
+  font-size: 22px;
+}
+.skills {
+  font-family: "Preahvihear";
+  margin-top: 85px;
+  color: white;
+  justify-self: center;
+}
+.skills h2 {
+  font-size: 24px;
+  justify-self: center;
+}
+.skills h3 {
+  justify-self: center;
+  font-size: 17px;
+}
+.skills-pic img {
+  width: 950px;
+  height: 657px;
+  margin-top: 150px;
+}
+.skills-icon {
+  display: flex;
+  position: absolute;
+
+  gap: 9px;
+  margin-left: 260px;
+}
+.skills-icon img {
+  width: 44px;
+  height: 44px;
+}
+.projects {
+  font-family: "Poppins";
+}
+.project-content {
+  color: white;
+  display: flex;
+}
+.project-content h2 {
+  font-size: 16px;
+  margin-top: 300px;
+}
+.project-content h3 {
+  font-size: 32px;
+}
+.project-content img {
+  width: 582px;
+  height: 341px;
+  border-radius: 15px;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 572px;
+  z-index: 1;
+}
+.project-text {
+  z-index: 2;
+}
+.project-about {
+  width: 669px;
+  height: 165px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  margin-top: 30px;
+  background: rgba(172, 172, 172, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+}
+.project-about p {
+  width: 557px;
+  margin: auto;
+}
+.contacts {
+  font-family: "Preahvihear";
+  color: white;
+  margin-top: 400px;
+}
+.contacts p {
+  margin-top: 70px;
+}
+.contacts h3 {
+  margin-top: 50px;
+}
+.gradient-proj {
+  margin-top: 200px;
+  margin-left: 100px;
+  display: flex;
+  width: 385px;
+  height: 430px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 0;
+  background: radial-gradient(
+    circle,
+    rgba(118, 60, 172, 1) 0%,
+    rgba(50, 15, 133, 1) 57%,
+    rgba(50, 15, 133, 0) 100%
+  );
+  box-shadow: 0 0 85px 20px rgba(50, 15, 133, 1);
+}
+.contacts a {
+  color: white;
+  text-decoration: none;
+}
+.contacts a:hover {
+  color: #7127ba;
+  transition: 0.3s;
+}
+.socials {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 20px;
+}
+.socials a {
+  color: white;
+}
+.socials a:hover {
+  color: #7127ba;
+  transition: 0.3s;
+}

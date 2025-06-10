@@ -1,0 +1,40 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.BG {
+  position: fixed;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 400;
+  width: 100%;
+  height: 90px;
+  background-color: #1a0b2e;
+  z-index: 5;
+}
+.navbar {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  padding-top: 25px;
+  gap: 600px;
+}
+img {
+  width: 30px;
+  height: 40px;
+}
+.navbar-text {
+  display: flex;
+  gap: 165px;
+}
+.navbar-text li {
+  list-style: none;
+}
+.navbar-text a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.navbar-text a:hover {
+  color: #7127ba;
+  transition: 0.3s;
+}
