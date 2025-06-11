@@ -13,6 +13,7 @@ import JS from "./assets/javascript.png";
 import CSS from "./assets/css.png";
 import HTML from "./assets/html.png";
 import Tailwind from "./assets/tailwind.png";
+import GroupSkillsMobile from "./assets/group skills mobile.png";
 import Project1 from "./assets/Project barangay buddy.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -96,23 +97,24 @@ const home = () => {
             <h3 data-aos="zoom-in-down">
               that values improving people's lives through accessible design{" "}
             </h3>
-            <div className="skills-pic">
-              <div
-                className="skills-icon"
-                data-aos="zoom-in-up"
-                data-aos-duration="2000"
-              >
-                <img src={Firebase} alt="firebase" />
-                <img src={Typescript} alt="typescript" />
-                <img src={Figma} alt="figma" />
-                <img src={React} alt="react" />
-                <img src={JS} alt="javascript" />
-                <img src={CSS} alt="CSS" />
-                <img src={HTML} alt="HTML" />
-                <img src={Tailwind} alt="tailwind" />
-              </div>
-              <img src={Skills} alt="" />
+            <img src={GroupSkillsMobile} alt="" />
+          </div>
+          <div className="skills-pic">
+            <div
+              className="skills-icon"
+              data-aos="zoom-in-up"
+              data-aos-duration="2000"
+            >
+              <img src={Firebase} alt="firebase" className="skills" />
+              <img src={Typescript} alt="typescript" className="skills" />
+              <img src={Figma} alt="figma" className="skills" />
+              <img src={React} alt="react" className="skills" />
+              <img src={JS} alt="javascript" className="skills" />
+              <img src={CSS} alt="CSS" className="skills" />
+              <img src={HTML} alt="HTML" className="skills" />
+              <img src={Tailwind} alt="tailwind" className="skills" />
             </div>
+            <img src={Skills} alt="" />
           </div>
         </div>
 

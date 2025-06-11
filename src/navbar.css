@@ -38,3 +38,21 @@ img {
   color: #7127ba;
   transition: 0.3s;
 }
+@media (max-width: 375px) {
+  .BG {
+    width: 375px;
+  }
+  .navbar {
+    gap: 80px;
+  }
+  img {
+    width: 20px;
+    height: 30px;
+  }
+  .navbar-text {
+    gap: 20px;
+  }
+  .navbar-text a {
+    font-size: 18px;
+  }
+}
