@@ -40,10 +40,11 @@ img {
 }
 @media (max-width: 375px) {
   .BG {
-    width: 375px;
+    width: 100%;
   }
   .navbar {
     gap: 80px;
+    margin-left: 50px;
   }
   img {
     width: 20px;
@@ -54,5 +55,43 @@ img {
   }
   .navbar-text a {
     font-size: 18px;
+  }
+}
+@media (min-width: 376px) and (max-width: 480px) {
+  .BG {
+    width: 100%;
+  }
+  .navbar {
+    gap: 80px;
+    margin-left: 50px;
+  }
+  img {
+    width: 20px;
+    height: 30px;
+  }
+  .navbar-text {
+    gap: 20px;
+  }
+  .navbar-text a {
+    font-size: 18px;
+  }
+}
+@media (min-width: 481px) and (max-width: 820px) {
+  .BG {
+    width: 100%;
+  }
+  .navbar {
+    gap: 300px;
+  }
+  .navbar-text {
+    gap: 80px;
+  }
+  @media (min-width: 900px) and (max-width: 1439px) {
+    .BG {
+      width: 100%;
+    }
+    .navbar {
+      gap: 50px;
+    }
   }
 }
