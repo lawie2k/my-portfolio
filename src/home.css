@@ -43,6 +43,7 @@
   height: 48px;
   position: absolute;
   margin-top: 150px;
+  z-index: 10;
 }
 .header-text h3 {
   font-size: 36px;
@@ -234,16 +235,32 @@
   .header-text h2 {
     margin-top: 30px;
   }
-
+  .about-me {
+    text-align: center;
+  }
   .about-me h2 {
     font-size: 24px;
-    display: flex;
-    justify-self: center;
+    display: inline-block;
+    animation: typing 3s steps(24), cursor 0.4s step-end infinite alternate;
+  }
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 75.5%;
+    }
   }
   .about-me p {
     font-size: 18px;
     width: 80%;
-    justify-self: center;
+    text-align: start;
+    margin-left: 25px;
   }
   .skills {
     height: 500px;
@@ -258,6 +275,7 @@
   .skills-text img {
     visibility: visible;
     margin-top: 100px;
+    margin-left: 15px;
     width: 90%;
     height: auto;
     display: flex;
@@ -316,6 +334,7 @@
   }
   .about-me h2 {
     font-size: 40px;
+    display: inline-block;
   }
   .about-me p {
     width: 100%;

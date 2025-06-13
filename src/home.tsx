@@ -97,7 +97,7 @@ const home = () => {
             <h3 data-aos="zoom-in-down">
               that values improving people's lives through accessible design{" "}
             </h3>
-            <img src={GroupSkillsMobile} alt="" />
+            <img src={GroupSkillsMobile} alt="" data-aos="zoom-in-up" />
           </div>
           <div className="skills-pic">
             <div
