@@ -10,6 +10,7 @@
   height: 90px;
   background-color: #1a0b2e;
   z-index: 15;
+  display: grid;
 }
 .navbar {
   display: flex;
