@@ -2,9 +2,11 @@
   display: grid;
 }
 .home-BG {
-  width: 1154px;
+  width: 100%;
+  max-width: 1154px;
   height: auto;
   justify-self: center;
+  margin: 0 auto;
 }
 .header {
   display: flex;
@@ -162,6 +164,58 @@
   width: 557px;
   margin: auto;
 }
+.project-content1 img {
+  width: 582px;
+  height: 341px;
+  border-radius: 15px;
+  position: absolute;
+  margin-top: 300px;
+  z-index: 1;
+}
+.project-text1 {
+  margin-left: 485px;
+  width: 90%;
+  max-width: 669px;
+  z-index: 2;
+}
+.project-text1 h2 {
+  text-align: end;
+  margin-right: 0;
+}
+.project-text1 h3 {
+  text-align: end;
+  margin-right: 0;
+}
+.project-content1 {
+  color: white;
+  display: flex;
+}
+.project-content1 h2 {
+  font-size: 16px;
+  margin-top: 300px;
+  text-align: end;
+}
+.project-content1 h3 {
+  font-size: 32px;
+  text-align: end;
+}
+.project-about1 {
+  width: 669px;
+  height: 165px;
+  display: flex;
+  border-radius: 15px;
+  margin-top: 30px;
+  background: rgba(172, 172, 172, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+}
+.project-about1 p {
+  width: 557px;
+  margin: auto;
+  text-align: end;
+}
 .contacts {
   font-family: "Preahvihear";
   color: white;
@@ -214,20 +268,31 @@
 }
 /*-------------------------media query----------------------------------------*/
 @media (max-width: 480px) {
+  .main {
+    width: 100%;
+    max-width: 425px;
+    overflow-x: hidden;
+    display: grid;
+    justify-items: center;
+    margin: 0 auto;
+  }
   .home-BG {
     width: 100%;
+    max-width: 425px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-self: center;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
   .header {
     flex-direction: column;
     justify-self: center;
   }
   .gradient {
-    width: 70%;
+    width: 50%;
     height: auto;
     margin: auto;
   }
@@ -302,28 +367,62 @@
   }
   .project-text {
     width: 100%;
-    margin-left: 15px;
+    padding-left: 14px;
   }
   .project-about {
     width: 90%;
   }
   .project-about p {
     font-size: 12px;
+    padding: 15px;
   }
   .project-content {
     flex-direction: column;
   }
   .project-content img {
     margin-left: 15px;
-    margin-top: 600px;
+    margin-top: 20px;
     width: 90%;
     height: auto;
+    position: relative;
+  }
+  .project-content1 {
+    flex-direction: column-reverse;
+  }
+  .project-content1 img {
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    position: relative;
+  }
+  .project-text1 {
+    margin-left: 15px;
+    width: 100%;
+  }
+  .project-text1 h2 {
+    text-align: end;
+    margin-right: 30px;
+  }
+  .project-text1 h3 {
+    text-align: end;
+    margin-right: 30px;
+  }
+  .project-about1 {
+    width: 90%;
+    margin-left: 12px;
+  }
+  .project-about1 p {
+    font-size: 12px;
+    text-align: end;
+    padding: 20px;
   }
   .gradient-proj {
     width: 60%;
     height: 240px;
-    margin-top: 20px;
+    margin-top: -200px;
     margin-left: 20px;
+    z-index: 0;
   }
   .contacts {
     width: 90%;
@@ -334,6 +433,10 @@
 @media (min-width: 481px) and (max-width: 820px) {
   .home-BG {
     width: 80%;
+  }
+  .gradient {
+    width: 90%;
+    height: auto;
   }
   .about-me h2 {
     font-size: 40px;
@@ -354,33 +457,328 @@
     width: 33px;
     height: 33px;
   }
-  .project-text h2 {
-    font-size: 18px;
+  .projects {
+    display: flex;
+    flex-direction: column;
   }
-  .project-text h3 {
-    font-size: 24px;
+  .project-text {
+    width: 100%;
+    margin-left: 15px;
   }
   .project-about {
-    width: 70%;
+    width: 90%;
   }
   .project-about p {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 30px;
   }
-  .projects img {
-    margin-left: 300px;
-    margin-top: 350px;
-    width: 50%;
+  .project-content {
+    flex-direction: column;
+  }
+  .project-content img {
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 90%;
     height: auto;
+    position: relative;
+  }
+  .project-content1 {
+    flex-direction: column-reverse;
+  }
+  .project-content1 img {
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    position: relative;
+  }
+  .project-text1 {
+    width: 90%;
+    margin-left: 70px;
+  }
+  .project-text1 h2 {
+    text-align: end;
+    margin-right: 65px;
+  }
+  .project-text1 h3 {
+    text-align: end;
+    margin-right: 65px;
+  }
+  .project-about1 {
+    width: 90%;
+  }
+  .project-about1 p {
+    font-size: 12px;
+    text-align: end;
+    padding: 30px;
   }
   .gradient-proj {
-    margin-left: 0;
-    margin-top: 350px;
-    width: 100%;
-    height: auto;
+    width: 60%;
+    height: 240px;
+    margin-top: -200px;
+    margin-left: 20px;
+    z-index: 0;
   }
-  @media (min-width: 900px) and (max-width: 1439px) {
+  @media (min-width: 900px) and (max-width: 1023px) {
+    .main {
+      width: 100%;
+      max-width: 1023px;
+      margin: 0 auto;
+      overflow-x: hidden;
+    }
     .home-BG {
       width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
+    .header {
+      padding-top: 100px;
+    }
+    .gradient {
+      width: 300px;
+      height: 350px;
+    }
+    .me {
+      width: 200px;
+      height: 200px;
+    }
+    .header-text h3 {
+      width: 250px;
+      font-size: 28px;
+      line-height: 40px;
+    }
+    .about-me h2 {
+      font-size: 40px;
+    }
+    .about-me p {
+      width: 100%;
+      font-size: 18px;
+    }
+    .skills-pic img {
+      width: 100%;
+      height: auto;
+    }
+    .skills-icon {
+      margin-left: 150px;
+    }
+    .project-content {
+      flex-direction: column;
+    }
+    .project-content img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      margin: 20px auto;
+      margin-left: 300px;
+      position: relative;
+    }
+    .project-text {
+      width: 100%;
+      text-align: center;
+    }
+    .project-about {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .project-content1 {
+      flex-direction: column;
+    }
+    .project-content1 img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      margin: 20px auto;
+      position: relative;
+    }
+    .project-text1 {
+      width: 100%;
+      text-align: center;
+    }
+    .project-text1 h2 {
+      text-align: center;
+      margin-right: 0;
+    }
+    .project-text1 h3 {
+      text-align: center;
+      margin-right: 0;
+    }
+    .project-about1 {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .project-about1 p {
+      text-align: center;
+    }
+    .gradient-proj {
+      width: 300px;
+      height: 350px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    width: 100%;
+    max-width: 375px;
+    overflow-x: hidden;
+    display: grid;
+    justify-items: center;
+    margin: 0 auto;
+  }
+  .home-BG {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .header {
+    flex-direction: column;
+    justify-self: center;
+  }
+  .gradient {
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+  .header-text {
+    margin: auto;
+    margin-top: 30px;
+  }
+  .header-text h2 {
+    margin-top: 20px;
+  }
+  .about-me {
+    text-align: center;
+  }
+  .about-me h2 {
+    font-size: 20px;
+    display: inline-block;
+    animation: typing 3s steps(24), cursor 0.4s step-end infinite alternate;
+  }
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  .about-me p {
+    font-size: 16px;
+    width: 85%;
+    text-align: start;
+    margin-left: 15px;
+  }
+  .skills {
+    height: 400px;
+  }
+  .skills-text h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .skills-text h3 {
+    text-align: center;
+  }
+  .skills-text img {
+    visibility: visible;
+    margin-top: 80px;
+    margin-left: 10px;
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-self: center;
+  }
+  .skills-icon {
+    margin-left: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  .skills-pic {
+    width: 0;
+  }
+  .skills-pic img {
+    width: 0;
+    visibility: hidden;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-text {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .project-about {
+    width: 95%;
+  }
+  .project-about p {
+    font-size: 11px;
+    padding: 15px;
+  }
+  .project-content {
+    flex-direction: column;
+  }
+  .project-content img {
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 95%;
+    height: auto;
+    position: relative;
+  }
+  .project-content1 {
+    flex-direction: column-reverse;
+  }
+  .project-content1 img {
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 95%;
+    height: auto;
+    position: relative;
+  }
+  .project-text1 {
+    margin-left: 10px;
+    width: 100%;
+  }
+  .project-text1 h2 {
+    text-align: end;
+    margin-right: 20px;
+  }
+  .project-text1 h3 {
+    text-align: end;
+    margin-right: 20px;
+  }
+  .project-about1 {
+    width: 95%;
+    margin-left: 8px;
+  }
+  .project-about1 p {
+    font-size: 11px;
+    text-align: end;
+    padding: 15px;
+  }
+  .gradient-proj {
+    width: 70%;
+    height: 200px;
+    margin-top: -150px;
+    margin-left: 15px;
+    z-index: 0;
+  }
+  .contacts {
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
   }
 }

@@ -15,6 +15,7 @@ import HTML from "./assets/html.png";
 import Tailwind from "./assets/tailwind.png";
 import GroupSkillsMobile from "./assets/group skills mobile.png";
 import Project1 from "./assets/Project barangay buddy.png";
+import Project2 from "./assets/VibeCam.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -148,6 +149,34 @@ const home = () => {
               </div>
               <img src={Project1} alt="" data-aos="fade-up" />
               <div className="gradient-proj" data-aos="fade-down"></div>
+            </div>
+
+            <div className="project-content1">
+              <a href="https://vibecam-7481f.web.app/">
+                <img src={Project2} alt="" data-aos="fade-up" />
+              </a>
+              <div className="project-text1">
+                <span>
+                  <h2 data-aos="zoom-out" data-aos-delay="200">
+                    Featured Project
+                  </h2>
+                </span>
+                <h3 data-aos="zoom-out" data-aos-delay="300">
+                  VibeCam
+                </h3>
+                <div
+                  className="project-about1"
+                  data-aos="zoom-out"
+                  data-aos-delay="400"
+                >
+                  <p>
+                    VibeCam is a fun and simple web app that lets you take
+                    photobooth-style snapshots right from your browser. Capture
+                    up to 5 pictures with countdown and flash effects, preview
+                    your shots, and download them as a photo strip.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
