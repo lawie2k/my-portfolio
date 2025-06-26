@@ -129,9 +129,28 @@ const home = () => {
                     Featured Project
                   </h2>
                 </span>
-                <h3 data-aos="zoom-out" data-aos-delay="300">
-                  Barangay Buddy
-                </h3>
+                <div
+                  className="project-title"
+                  data-aos="zoom-out"
+                  data-aos-delay="300"
+                >
+                  <h3 data-aos="zoom-out" data-aos-delay="300">
+                    Barangay Buddy
+                  </h3>
+                  <div className="project-logo">
+                    <img src={HTML} alt="" />
+                    <img src={CSS} alt="" />
+                    <img src={JS} alt="" />
+                    <a
+                      href="https://github.com/lawie2k/barangay-buddy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-aos="fade-left"
+                    >
+                      <FontAwesomeIcon icon={faGithub} size="2x" />
+                    </a>
+                  </div>
+                </div>
                 <div
                   className="project-about"
                   data-aos="zoom-out"
@@ -147,13 +166,23 @@ const home = () => {
                   </p>
                 </div>
               </div>
-              <img src={Project1} alt="" data-aos="fade-up" />
+              <img
+                src={Project1}
+                alt=""
+                data-aos="fade-up"
+                className="project-img"
+              />
               <div className="gradient-proj" data-aos="fade-down"></div>
             </div>
 
             <div className="project-content1">
               <a href="https://vibecam-7481f.web.app/">
-                <img src={Project2} alt="" data-aos="fade-up" />
+                <img
+                  src={Project2}
+                  alt=""
+                  data-aos="fade-up"
+                  className="project-img1"
+                />
               </a>
               <div className="project-text1">
                 <span>
@@ -161,9 +190,27 @@ const home = () => {
                     Featured Project
                   </h2>
                 </span>
-                <h3 data-aos="zoom-out" data-aos-delay="300">
-                  VibeCam
-                </h3>
+                <div className="project-title1">
+                  <div
+                    className="project-logo1"
+                    data-aos="zoom-out"
+                    data-aos-delay="300"
+                  >
+                    <a
+                      href="https://github.com/lawie2k/VibeCam"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-aos="fade-left"
+                    >
+                      <FontAwesomeIcon icon={faGithub} size="2x" />
+                    </a>
+                    <img src={React} alt="" />
+                    <img src={Tailwind} alt="" />
+                  </div>
+                  <h3 data-aos="zoom-out" data-aos-delay="300">
+                    VibeCam
+                  </h3>
+                </div>
                 <div
                   className="project-about1"
                   data-aos="zoom-out"
