@@ -168,6 +168,14 @@
 .project-text {
   z-index: 2;
 }
+.project-text a {
+  color: white;
+  text-decoration: none;
+}
+.project-text a:hover {
+  color: #7127ba;
+  transition: 0.3s;
+}
 .project-about {
   width: 669px;
   height: 165px;
@@ -194,10 +202,20 @@
   z-index: 1;
 }
 .project-text1 {
+  display: grid;
   margin-left: 485px;
   width: 90%;
   max-width: 669px;
   z-index: 2;
+}
+.project-text1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.project-text1 a:hover {
+  color: #7127ba;
+  transition: 0.3s;
 }
 .project-title1 {
   display: flex;
@@ -504,9 +522,12 @@
   }
   .project-title1 {
     display: flex;
-    justify-self: end;
     gap: 5px;
+    align-items: end;
     flex-direction: column-reverse;
+  }
+  .project-logo1 {
+    margin-right: 40px;
   }
   .project-logo1 img {
     width: 28px;

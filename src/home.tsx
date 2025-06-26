@@ -134,13 +134,16 @@ const home = () => {
                   data-aos="zoom-out"
                   data-aos-delay="300"
                 >
-                  <h3 data-aos="zoom-out" data-aos-delay="300">
-                    Barangay Buddy
-                  </h3>
+                  <a href="https://barangay-buddy.web.app/">
+                    <h3 data-aos="zoom-out" data-aos-delay="300">
+                      Barangay Buddy
+                    </h3>
+                  </a>
                   <div className="project-logo">
                     <img src={HTML} alt="" />
                     <img src={CSS} alt="" />
                     <img src={JS} alt="" />
+                    <img src={Firebase} alt="" />
                     <a
                       href="https://github.com/lawie2k/barangay-buddy"
                       target="_blank"
@@ -176,14 +179,13 @@ const home = () => {
             </div>
 
             <div className="project-content1">
-              <a href="https://vibecam-7481f.web.app/">
-                <img
-                  src={Project2}
-                  alt=""
-                  data-aos="fade-up"
-                  className="project-img1"
-                />
-              </a>
+              <img
+                src={Project2}
+                alt=""
+                data-aos="fade-up"
+                className="project-img1"
+              />
+
               <div className="project-text1">
                 <span>
                   <h2 data-aos="zoom-out" data-aos-delay="200">
@@ -207,9 +209,12 @@ const home = () => {
                     <img src={React} alt="" />
                     <img src={Tailwind} alt="" />
                   </div>
-                  <h3 data-aos="zoom-out" data-aos-delay="300">
-                    VibeCam
-                  </h3>
+
+                  <a href="https://vibecam-7481f.web.app/">
+                    <h3 data-aos="zoom-out" data-aos-delay="300">
+                      VibeCam
+                    </h3>
+                  </a>
                 </div>
                 <div
                   className="project-about1"
