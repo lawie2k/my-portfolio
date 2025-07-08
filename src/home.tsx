@@ -80,7 +80,7 @@ const home = () => {
             </div>
           </div>
 
-          <div className="about-me" id="about">
+          <div className="about-me">
             <h2>I'm a Front-end Developer.</h2>
             <p data-aos="zoom-in-down">
               Aspiring Front-End Developer <br /> Currently a 3rd-year BSIT
@@ -121,7 +121,7 @@ const home = () => {
             </div>
           </div>
 
-          <div className="projects">
+          <div className="projects" id="projects">
             <div className="project-content">
               <div className="project-text">
                 <span>
@@ -134,7 +134,7 @@ const home = () => {
                   data-aos="zoom-out"
                   data-aos-delay="300"
                 >
-                  <a href="https://barangay-buddy.web.app/">
+                  <a href="https://barangay-buddy.web.app/" target="_blank">
                     <h3 data-aos="zoom-out" data-aos-delay="300">
                       Barangay Buddy
                     </h3>
@@ -210,7 +210,7 @@ const home = () => {
                     <img src={Tailwind} alt="" />
                   </div>
 
-                  <a href="https://vibecam-7481f.web.app/">
+                  <a href="https://vibecam-7481f.web.app/" target="_blank">
                     <h3 data-aos="zoom-out" data-aos-delay="300">
                       VibeCam
                     </h3>

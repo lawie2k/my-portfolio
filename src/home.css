@@ -202,7 +202,6 @@
   z-index: 1;
 }
 .project-text1 {
-  display: grid;
   margin-left: 485px;
   width: 90%;
   max-width: 669px;
@@ -309,6 +308,7 @@
 .contacts a {
   color: white;
   text-decoration: none;
+  display: inline-block;
 }
 .contacts a:hover {
   color: #7127ba;
@@ -327,6 +327,7 @@
   color: #7127ba;
   transition: 0.3s;
 }
+
 /*-------------------------media query----------------------------------------*/
 @media (max-width: 480px) {
   .main {
@@ -527,7 +528,7 @@
     flex-direction: column-reverse;
   }
   .project-logo1 {
-    margin-right: 40px;
+    margin-right: 43px;
   }
   .project-logo1 img {
     width: 28px;
@@ -613,9 +614,12 @@
     height: auto;
     position: relative;
   }
+  .project-logo1 {
+    margin-right: 0;
+  }
   .project-text1 {
-    width: 90%;
-    margin-left: 70px;
+    width: 100%;
+    margin-left: 15px;
   }
   .project-text1 h2 {
     text-align: end;
@@ -789,10 +793,6 @@
     color: #7127ba;
     transition: 0.3s;
   }
-  .project-text1 {
-    width: 90%;
-    margin-left: 70px;
-  }
 }
 @media (max-width: 375px) {
   .main {
@@ -925,7 +925,7 @@
   }
   .project-title {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 5px;
   }
   .project-logo img {
@@ -946,9 +946,11 @@
   }
   .project-title1 {
     display: flex;
-    justify-self: end;
     gap: 5px;
-    align-items: center;
+    align-items: end;
+  }
+  .project-logo1 {
+    margin-right: 20px;
   }
   .project-logo1 img {
     width: 20px;
@@ -980,7 +982,6 @@
   }
   .project-about1 {
     width: 95%;
-    margin-left: 8px;
   }
   .project-about1 p {
     font-size: 11px;
